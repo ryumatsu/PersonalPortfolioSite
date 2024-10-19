@@ -2,24 +2,24 @@ import Mock from "../mock";
 
 const database = {
   information: {
-    name: "Devid Chester",
+    name: "Ryu Matsu",
     aboutContent:
-      "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
-    age: 24,
+    "I’m a front-end developer experienced in full-stack development, specializing in React, Vue, and .NET Core with SQL database expertise. I deliver scalable solutions that enhance user experiences. Let’s build something great together—contact me to learn more!",
+    age: "",
     phone: "",
-    nationality: "American",
-    language: "English, French",
-    email: "",
-    address: "121 King Street, Melbourne, Australia",
-    freelanceStatus: "Available",
+    nationality: "",
+    language: "",
+    email: "ryumatsu@proton.me",
+    address: "Southern California",
+    freelanceStatus: "",
     socialLinks: {
-      facebook: "https://facebook.com",
-      twitter: "https://twitter.com",
+      facebook: "",
+      twitter: "https://x.com/techymatsu",
       pinterest: "",
       behance: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/ryumatsu/",
       dribbble: "",
-      github: "https://github.com",
+      github: "https://github.com/ryumatsu",
     },
     brandImage: "/images/brand-image.jpg",
     aboutImage: "/images/about-image.jpg",
@@ -287,19 +287,19 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
+        year: "Nov 2022 - Apr 2023",
         position: "Frontend Web Developer",
-        company: "Abc Company",
+        company: "Strategic Data Systems/New Directions Technology Inc",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "As a Front End Web Developer at Strategic Data Systems/New Directions Technology Inc, I built and enhanced a human resources application using Vue.js, working closely with back-end developers to ensure smooth data flow between SQL databases and SharePoint. I modified an existing app to improve hiring, promotion, and reassignment processes, delivering an optimized tool that streamlined HR workflows for U.S. Department of Defense and federal agency clients.",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
+        year: "May 2022 - Oct 2022",
+        position: "Fullstack Developer",
+        company: "Carte",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "As a Full Stack Developer at Carte, I contributed to building a digital menu and ordering platform for restaurants. I worked on back-end tables, middle-tier routing services, and front-end data management. I developed a license management web page with SQL database integration and filtering capabilities. My role involved collaborating in an agile team, using GitHub for version control, and delivering an efficient solution for both dine-in and online ordering.",
       },
       {
         id: 3,
@@ -313,25 +313,25 @@ const database = {
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
+        year: "Fall 2023 - Fall 2025 (Expected Completion)",
+        graduation: "Master of Science in Information Systems (MSIS)",
+        university: "California State University, Los Angeles",
         details:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
+        year: "Fall 2014 - Fall 2016",
+        graduation: "Bachelor of Science in Business Administration (BSBA)",
+        university: "California State University, Los Angeles",
         details:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
       },
       {
         id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
+        year: "",
+        graduation: "Bachelor of Science in Computer Information Systems (BSCIS)",
+        university: "California State University, Los Angeles",
         details:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
       },

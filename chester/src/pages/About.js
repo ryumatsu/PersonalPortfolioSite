@@ -8,14 +8,14 @@ import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
 import Spinner from "../components/Spinner";
-import Testimonial from "../components/Testimonial";
+// import Testimonial from "../components/Testimonial";
 import { Image } from "../components/common/Image";
 
 function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
-  const [reviews, setReviews] = useState([]);
+  // const [reviews, setReviews] = useState([]);
 
   const sliderSettings = {
     dots: false,
@@ -50,9 +50,9 @@ function About() {
     axios.get("/api/services").then((response) => {
       setServices(response.data);
     });
-    axios.get("/api/reviews").then((response) => {
-      setReviews(response.data);
-    });
+    // axios.get("/api/reviews").then((response) => {
+    //   setReviews(response.data);
+    // });
   }, []);
 
   return (
@@ -129,7 +129,7 @@ function About() {
                     )}
                     {!information.address ? null : (
                       <li>
-                        <b>Address</b> {information.address}
+                        <b>Location</b> {information.address}
                       </li>
                     )}
                     {!information.freelanceStatus ? null : (
@@ -164,7 +164,7 @@ function About() {
           </div>
         </div>
         <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-          <div className="container">
+          {/* <div className="container">
             <Sectiontitle title="Reviews" />
             <div className="row justify-content-center">
               <div className="col-12">
@@ -175,7 +175,7 @@ function About() {
                 </Slider>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </Suspense>
     </Layout>

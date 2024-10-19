@@ -74,11 +74,11 @@ function Header() {
           &copy; {new Date().getFullYear()}{" "}
           <b>
             <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://nuclearthemes.com"
+              // rel="noopener noreferrer"
+              // target="_blank"
+              // href="https://nuclearthemes.com"
             >
-              NuclearThemes
+              RyuMatsu Portfolio
             </a>
           </b>
         </p>

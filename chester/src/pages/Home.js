@@ -5,9 +5,11 @@ import Layout from "../components/Layout";
 import Particle from "../components/Particle";
 import Socialicons from "../components/Socialicons";
 import Spinner from "../components/Spinner";
+import { useTypewriter, Cursor, Typewriter } from 'react-simple-typewriter';
 
 function Home({ lightMode }) {
   const [information, setInformation] = useState("");
+  const [startTypingName, setStartTypingName] = useState(false);
 
   useEffect(() => {
     axios.get("/api/information").then((response) => {
@@ -15,13 +17,21 @@ function Home({ lightMode }) {
     });
   }, []);
 
+  const [initialText] = useTypewriter({
+    words: ['Hello', 'Welcome to my page', "I'm "],
+    loop: 1,
+    deleteSpeed: 50,
+    typeSpeed: 70,
+    onLoopDone: () => setStartTypingName(true),
+  });
+
   return (
     <Layout>
       <Helmet>
-        <title>Home - Chester React Personal Portfolio Template</title>
+        <title>Home - Ryu Matsu's React Personal Portfolio Site</title>
         <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Homepage"
+          name="personal portfolio site for RyuMatsu showcasing his personal projects, resume, and blog posts"
+          content="RyuMatsu's React Personal Portfolio Homepage"
         />
       </Helmet>
       <Suspense fallback={<Spinner />}>
@@ -32,8 +42,20 @@ function Home({ lightMode }) {
               <div className="col-lg-10 col-12">
                 <div className="mi-home-content">
                   <h1>
-                    Hi, I am{" "}
-                    <span className="color-theme">{information.name}</span>
+                    {initialText}
+                    {!startTypingName && <Cursor />}
+                    
+                    {startTypingName && (
+                      <span className="color-theme" >
+                      <Typewriter
+                        words={[information.name || '']}
+                        loop={1}
+                        typeSpeed={100}
+                        deleteSpeed={0}
+                        />
+                        {startTypingName && <Cursor />}
+                      </span>
+                      )}
                   </h1>
                   <p>{information.aboutContent}</p>
                   <Socialicons bordered />
